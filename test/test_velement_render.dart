@@ -5,9 +5,6 @@ import 'package:vdom/vdom.dart' as v;
 
 void inject(v.VNode n, Node parent, v.Context context) {
   parent.append(n.ref);
-  if (context.isAttached){
-    n.attached();
-  }
   n.render(context);
 }
 

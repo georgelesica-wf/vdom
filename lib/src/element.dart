@@ -108,14 +108,6 @@ abstract class VElement<T extends html.Element> extends VNode<T> with Container<
     }
   }
 
-  void detached() {
-    if (children != null) {
-      for (var i = 0; i < children.length; i++) {
-        children[i].detached();
-      }
-    }
-  }
-
   bool sameType(VNode other) =>
       super.sameType(other) && type == (other as VElement).type;
 }

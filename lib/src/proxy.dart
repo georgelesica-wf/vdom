@@ -30,7 +30,4 @@ abstract class VProxy<T extends html.Node, E extends VNode> implements VNode<T> 
   void dispose(Context context) {
     node.dispose(context);
   }
-
-  void attached() { node.attached(); }
-  void detached() { node.detached(); }
 }
