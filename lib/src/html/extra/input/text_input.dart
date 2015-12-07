@@ -5,7 +5,6 @@
 library vdom.html.extra.text_input;
 
 import 'dart:html' as html;
-import '../../../context.dart';
 import 'text_input_base.dart';
 
 /// Virtual Html Element `<input type="text">`
@@ -33,7 +32,7 @@ class VTextInput extends VTextInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'text'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'text');
+  }
 }

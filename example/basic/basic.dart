@@ -11,17 +11,15 @@ void increment(){
 }
 
 void rerender() {
-  var next = render();
+  var next = create();
   root.update(next, const Context(true));
   root = next;
 }
 
-VHtmlGenericElement render() => new VHtmlGenericElement('div')(count.toString());
+VHtmlGenericElement create() => new VHtmlGenericElement('div')(count.toString());
 
 void main() {
-   root = render();
-   root.create(const Context(false));
-   root.init();
+   root = create();
    document.body.append(root.ref);
    root.attached();
    root.render(const Context(true));

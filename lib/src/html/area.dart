@@ -35,9 +35,9 @@ class VArea extends VHtmlElement<html.AreaElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.AreaElement(); }
+        styles: styles) {
+    ref = new html.AreaElement();
+  }
 
   void render(Context context) {
     super.render(context);

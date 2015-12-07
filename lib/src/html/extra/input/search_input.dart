@@ -5,7 +5,6 @@
 library vdom.html.extra.search_input;
 
 import 'dart:html' as html;
-import '../../../context.dart';
 import 'text_input_base.dart';
 
 /// Virtual Html Element `<input type="search">`
@@ -33,7 +32,7 @@ class VSearchInput extends VTextInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'search'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'search');
+  }
 }

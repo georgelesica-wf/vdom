@@ -4,7 +4,6 @@ import 'package:unittest/html_enhanced_config.dart';
 import 'package:vdom/vdom.dart' as v;
 
 void injectBefore(v.VNode n, Node parent, Node nextRef, v.Context context) {
-  n.create(context);
   parent.insertBefore(n.ref, nextRef);
   if (context.isAttached){
     n.attached();

@@ -5,7 +5,6 @@
 library vdom.html.generic;
 
 import 'dart:html' as html;
-import '../context.dart';
 import '../node.dart';
 import 'element.dart';
 
@@ -29,9 +28,7 @@ class VHtmlGenericElement extends VHtmlElement<html.Element> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new html.Element.tag(tag);
   }
 

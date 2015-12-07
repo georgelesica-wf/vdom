@@ -34,9 +34,9 @@ class VFileInput extends VValueInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'file'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'file');
+  }
 
   void render(Context context) {
     super.render(context);

@@ -5,7 +5,6 @@
 library vdom.svg.generic;
 
 import 'dart:svg' as svg;
-import '../context.dart';
 import '../node.dart';
 import 'element.dart';
 
@@ -30,9 +29,7 @@ class VSvgGenericElement extends VSvgElement<svg.SvgElement> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new svg.SvgElement.tag(tag);
   }
 

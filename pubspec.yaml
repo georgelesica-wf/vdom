@@ -4,7 +4,8 @@ author: Boris Kaul <localvoid@gmail.com>
 description: Virtual DOM library.
 homepage: https://github.com/localvoid/vdom
 environment:
-  sdk: '>=1.8.0'
+  sdk: '>=1.13.0'
 dev_dependencies:
   browser: any
+  dart_dev: "^1.0.0"
   unittest: any

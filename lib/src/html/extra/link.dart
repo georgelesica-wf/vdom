@@ -31,9 +31,9 @@ class VLink extends VHtmlElement<html.AnchorElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.AnchorElement(); }
+        styles: styles) {
+    ref = new html.AnchorElement();
+  }
 
   void render(Context context) {
     super.render(context);

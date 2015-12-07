@@ -5,7 +5,6 @@
 library vdom.svg.group;
 
 import 'dart:svg' as svg;
-import '../context.dart';
 import '../node.dart';
 import '../element.dart';
 
@@ -25,9 +24,7 @@ class VSvgGroup extends VElement<svg.GElement> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new svg.GElement();
   }
 }

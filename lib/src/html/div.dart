@@ -5,7 +5,6 @@
 library vdom.html.div;
 
 import 'dart:html' as html;
-import '../context.dart';
 import '../node.dart';
 import 'element.dart';
 
@@ -26,7 +25,7 @@ class VDiv extends VHtmlElement<html.DivElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.DivElement(); }
+        styles: styles) {
+    ref = new html.DivElement();
+  }
 }

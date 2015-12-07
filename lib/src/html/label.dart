@@ -29,9 +29,9 @@ class VLabel extends VHtmlElement<html.LabelElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.LabelElement(); }
+        styles: styles) {
+    ref = new html.LabelElement();
+  }
 
   void render(Context context) {
     super.render(context);

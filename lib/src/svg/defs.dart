@@ -6,7 +6,6 @@ library vdom.svg.defs;
 
 import 'dart:svg' as svg;
 import '../node.dart';
-import '../context.dart';
 import 'element.dart';
 
 class VSvgDefs extends VSvgElement<svg.DefsElement> {
@@ -25,9 +24,7 @@ class VSvgDefs extends VSvgElement<svg.DefsElement> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new svg.DefsElement();
   }
 }

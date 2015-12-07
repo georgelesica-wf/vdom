@@ -29,9 +29,9 @@ class VAbbr extends VHtmlElement<html.Element> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.Element.tag('abbr'); }
+        styles: styles) {
+    ref = new html.Element.tag('abbr');
+  }
 
   void render(Context context) {
     super.render(context);

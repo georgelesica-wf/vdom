@@ -19,10 +19,6 @@ abstract class VProxy<T extends html.Node, E extends VNode> implements VNode<T> 
 
   VProxy(this.node);
 
-  void create(Context context) {
-    node.create(context);
-  }
-
   void render(Context context) {
     node.render(context);
   }

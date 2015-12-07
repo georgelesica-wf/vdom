@@ -54,9 +54,7 @@ class VSvgRect extends VSvgShapeElement<svg.RectElement> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new svg.RectElement();
   }
 

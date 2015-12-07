@@ -36,9 +36,9 @@ class VSlider extends VValueInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'range'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'range');
+  }
 
   void render(Context context) {
     super.render(context);

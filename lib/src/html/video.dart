@@ -41,9 +41,9 @@ class VVideo extends VHtmlElement<html.VideoElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.VideoElement(); }
+        styles: styles) {
+    ref = new html.VideoElement();
+  }
 
   void render(Context context) {
     super.render(context);

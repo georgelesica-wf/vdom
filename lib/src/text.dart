@@ -13,9 +13,7 @@ class VText extends VNode<html.Text> {
   /// [VText] content
   String data;
 
-  VText(this.data, {Object key}) : super(key);
-
-  void create(Context context) {
+  VText(this.data, {Object key}) : super(key) {
     ref = new html.Text(data);
   }
 

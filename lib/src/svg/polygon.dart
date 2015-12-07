@@ -44,9 +44,7 @@ class VSvgPolygon extends VSvgShapeElement<svg.PolygonElement> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new svg.PolygonElement();
   }
 

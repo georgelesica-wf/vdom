@@ -47,8 +47,6 @@ abstract class Container<T extends html.Node> {
   /// Insert child before [nextRef]. If [nextRef] is `null`, append it to the
   /// end.
   void insertBefore(VNode node, html.Node nextRef, Context context) {
-    node.create(context);
-    node.init();
     container.insertBefore(node.ref, nextRef);
     if (context.isAttached){
       node.attached();

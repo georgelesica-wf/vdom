@@ -33,9 +33,9 @@ class VImg extends VHtmlElement<html.ImageElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.ImageElement(); }
+        styles: styles) {
+    ref = new html.ImageElement();
+  }
 
   void render(Context context) {
     super.render(context);

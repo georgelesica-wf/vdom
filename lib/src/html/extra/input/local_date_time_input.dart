@@ -5,7 +5,6 @@
 library vdom.html.extra.local_date_time_input;
 
 import 'dart:html' as html;
-import '../../../context.dart';
 import 'value_input_base.dart';
 
 /// Virtual Html Element `<input type="datetime-local">`
@@ -29,7 +28,7 @@ class VLocalDateTimeInput extends VValueInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'datetime-local'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'datetime-local');
+  }
 }

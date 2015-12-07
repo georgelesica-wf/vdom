@@ -5,7 +5,6 @@
 library vdom.html.extra.date_time_input;
 
 import 'dart:html' as html;
-import '../../../context.dart';
 import 'value_input_base.dart';
 
 /// Virtual Html Element `<input type="datetime">`
@@ -29,7 +28,7 @@ class VDateTimeInput extends VValueInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'datetime'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'datetime');
+  }
 }

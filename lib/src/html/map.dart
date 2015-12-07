@@ -29,9 +29,9 @@ class VMap extends VHtmlElement<html.MapElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.MapElement(); }
+        styles: styles) {
+    ref = new html.MapElement();
+  }
 
   void render(Context context) {
     super.render(context);

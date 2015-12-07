@@ -34,9 +34,9 @@ class VTextArea extends VHtmlElement<html.TextAreaElement> {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.TextAreaElement(); }
+        styles: styles) {
+    ref = new html.TextAreaElement();
+  }
 
   void render(Context context) {
     super.render(context);

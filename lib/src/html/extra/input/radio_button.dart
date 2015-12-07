@@ -5,7 +5,6 @@
 library vdom.html.extra.input.radio_button;
 
 import 'dart:html' as html;
-import '../../../context.dart';
 import 'checked_input_base.dart';
 
 /// Virtual Html Element `<input type="radio">`
@@ -27,7 +26,7 @@ class VRadioButton extends VCheckedInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'radio'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'radio');
+  }
 }

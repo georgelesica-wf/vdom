@@ -25,14 +25,8 @@ abstract class VNode<T extends html.Node> {
   /// [VNode] constructor.
   VNode(this.key);
 
-  /// Create root-level html Node.
-  void create(Context context);
-
   /// Mount on top of existing html Node
   void mount(T node, Context context) { this.ref = node; }
-
-  /// Initialize node
-  void init() {}
 
   /// Render attributes, styles, classes, children, etc.
   void render(Context context) {}

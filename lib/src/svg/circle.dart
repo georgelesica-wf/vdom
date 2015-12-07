@@ -48,9 +48,7 @@ class VSvgCircle extends VSvgShapeElement<svg.CircleElement> {
           type: type,
           attributes: attributes,
           classes: classes,
-          styles: styles);
-
-  void create(Context context) {
+          styles: styles) {
     ref = new svg.CircleElement();
   }
 

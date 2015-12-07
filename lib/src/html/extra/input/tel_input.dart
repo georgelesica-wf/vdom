@@ -5,7 +5,6 @@
 library vdom.html.extra.tel_input;
 
 import 'dart:html' as html;
-import '../../../context.dart';
 import 'text_input_base.dart';
 
 /// Virtual Html Element `<input type="tel">`
@@ -33,7 +32,7 @@ class VTelInput extends VTextInputBase {
         type: type,
         attributes: attributes,
         classes: classes,
-        styles: styles);
-
-  void create(Context context) { ref = new html.InputElement(type: 'tel'); }
+        styles: styles) {
+    ref = new html.InputElement(type: 'tel');
+  }
 }
