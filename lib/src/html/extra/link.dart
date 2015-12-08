@@ -35,8 +35,8 @@ class VLink extends VHtmlElement<html.AnchorElement> {
     ref = new html.AnchorElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (href != null) {
       ref.href = href;
     }

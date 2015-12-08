@@ -5,7 +5,7 @@ import 'package:vdom/vdom.dart' as v;
 
 void inject(v.VNode n, Node parent, v.Context context) {
   parent.append(n.ref);
-  n.render(context);
+  n.flush(context);
 }
 
 void main() {

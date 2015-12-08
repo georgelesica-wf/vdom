@@ -48,8 +48,8 @@ class VSvgPolyline extends VSvgShapeElement<svg.PolylineElement> {
     ref = new svg.PolylineElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (points != null) {
       ref.setAttribute('points', points);

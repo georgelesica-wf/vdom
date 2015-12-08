@@ -54,8 +54,8 @@ class VSvgEllipse extends VSvgShapeElement<svg.EllipseElement> {
     ref = new svg.EllipseElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (cx != null) {
       ref.setAttribute('cx', cx.toString());

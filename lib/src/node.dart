@@ -29,7 +29,7 @@ abstract class VNode<T extends html.Node> {
   void mount(T node, Context context) { this.ref = node; }
 
   /// Render attributes, styles, classes, children, etc.
-  void render(Context context) {}
+  void flush(Context context) {}
 
   /// Update attributes, styles, clasess, children, etc.
   void update(VNode other, Context context) { other.ref = ref; }

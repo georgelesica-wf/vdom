@@ -13,3 +13,6 @@ export 'src/text.dart';
 
 export 'src/html.dart';
 export 'src/svg.dart';
+
+export 'src/render.dart';
+export 'src/component.dart';

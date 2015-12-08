@@ -38,8 +38,8 @@ class VFileInput extends VValueInputBase {
     ref = new html.InputElement(type: 'file');
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (accept != null) {
       ref.accept = accept;
     }

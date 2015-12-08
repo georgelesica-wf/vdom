@@ -52,8 +52,8 @@ class VSvgCircle extends VSvgShapeElement<svg.CircleElement> {
     ref = new svg.CircleElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (cx != null) {
       ref.setAttribute('cx', cx.toString());

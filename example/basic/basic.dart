@@ -20,7 +20,6 @@ VHtmlGenericElement create() => new VHtmlGenericElement('div')(count.toString())
 
 void main() {
    root = create();
-   document.body.append(root.ref);
-   root.render(const Context(true));
+   render(root, document.body);
    new Timer.periodic(const Duration(seconds: 1), (t){ increment(); });
 }

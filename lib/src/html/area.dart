@@ -39,8 +39,8 @@ class VArea extends VHtmlElement<html.AreaElement> {
     ref = new html.AreaElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (shape != null) {
       ref.shape = shape;
     }

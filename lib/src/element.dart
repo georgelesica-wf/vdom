@@ -46,14 +46,7 @@ abstract class VElement<T extends html.Element> extends VNode<T> with Container<
     return this;
   }
 
-  void mount(html.Element node, Context context) {
-    super.mount(node, context);
-    if (children != null) {
-      mountChildren(children, node, context);
-    }
-  }
-
-  void render(Context context) {
+  void flush(Context context) {
     if (id != null) {
       ref.id = id;
     }

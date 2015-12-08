@@ -48,8 +48,8 @@ class VSvgPolygon extends VSvgShapeElement<svg.PolygonElement> {
     ref = new svg.PolygonElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (points != null) {
       ref.setAttribute('points', points);

@@ -33,8 +33,8 @@ class VMap extends VHtmlElement<html.MapElement> {
     ref = new html.MapElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (name != null) {
       ref.name = name;
     }

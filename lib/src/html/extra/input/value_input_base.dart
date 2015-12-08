@@ -36,8 +36,8 @@ abstract class VValueInputBase extends VHtmlElement<html.InputElement> {
         classes: classes,
         styles: styles);
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (_value != null) {
       ref.value = _value;
     }

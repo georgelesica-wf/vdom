@@ -38,8 +38,8 @@ class VTextArea extends VHtmlElement<html.TextAreaElement> {
     ref = new html.TextAreaElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (_value != null) {
       ref.value = _value;
     }

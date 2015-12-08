@@ -48,7 +48,7 @@ abstract class Container<T extends html.Node> {
   /// end.
   void insertBefore(VNode node, html.Node nextRef, Context context) {
     container.insertBefore(node.ref, nextRef);
-    node.render(context);
+    node.flush(context);
   }
 
   /// Move child
@@ -59,14 +59,6 @@ abstract class Container<T extends html.Node> {
   /// Remove child
   void removeChild(VNode node, Context context) {
     node.dispose(context);
-  }
-
-  /// Mount children inside of [node] element
-  void mountChildren(List<VNode> children, html.Element node, Context context) {
-    // TODO: check performance for childNodes iteration
-    for (var i = 0; i < node.childNodes.length; i++) {
-      children[i].mount(node.childNodes[i], context);
-    }
   }
 
   /// Render [children] into [container] node.

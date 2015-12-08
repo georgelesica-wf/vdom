@@ -44,8 +44,8 @@ abstract class VSvgShapeElement<T extends html.Element> extends VSvgGraphicsElem
           classes: classes,
           styles: styles);
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (transform != null) {
       ref.setAttribute(transform, transform);

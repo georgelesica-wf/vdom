@@ -58,8 +58,8 @@ class VSvgRect extends VSvgShapeElement<svg.RectElement> {
     ref = new svg.RectElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (x != null) {
       ref.setAttribute('x', x.toString());

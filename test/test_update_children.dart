@@ -5,7 +5,7 @@ import 'package:vdom/vdom.dart' as v;
 
 void injectBefore(v.VNode n, Node parent, Node nextRef, v.Context context) {
   parent.insertBefore(n.ref, nextRef);
-  n.render(context);
+  n.flush(context);
 }
 
 v.VHtmlGenericElement e(Object key, [Object c = null]) {

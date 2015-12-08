@@ -37,8 +37,8 @@ class VImg extends VHtmlElement<html.ImageElement> {
     ref = new html.ImageElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (src != null) {
       ref.src = src;
     }

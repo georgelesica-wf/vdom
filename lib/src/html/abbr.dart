@@ -33,8 +33,8 @@ class VAbbr extends VHtmlElement<html.Element> {
     ref = new html.Element.tag('abbr');
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (title != null) {
       ref.title = title;
     }

@@ -40,8 +40,8 @@ class VSlider extends VValueInputBase {
     ref = new html.InputElement(type: 'range');
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (max != null) {
       ref.max = max.toString();
     }

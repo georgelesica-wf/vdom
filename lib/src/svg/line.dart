@@ -54,8 +54,8 @@ class VSvgLine extends VSvgShapeElement<svg.LineElement> {
     ref = new svg.LineElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (x1 != null) {
       ref.setAttribute('x1', x1.toString());

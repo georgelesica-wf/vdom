@@ -35,8 +35,8 @@ abstract class VTextInputBase extends VValueInputBase {
         classes: classes,
         styles: styles);
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (placeholder != null) {
       ref.placeholder = placeholder;
     }

@@ -34,8 +34,8 @@ abstract class VCheckedInputBase extends VHtmlElement<html.InputElement> {
         classes: classes,
         styles: styles);
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (_checked != null) {
       ref.checked = _checked;
     }

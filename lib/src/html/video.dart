@@ -45,8 +45,8 @@ class VVideo extends VHtmlElement<html.VideoElement> {
     ref = new html.VideoElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (src != null) {
       ref.src = src;
     }

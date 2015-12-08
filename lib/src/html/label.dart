@@ -33,8 +33,8 @@ class VLabel extends VHtmlElement<html.LabelElement> {
     ref = new html.LabelElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
     if (htmlFor != null) {
       ref.htmlFor = htmlFor;
     }

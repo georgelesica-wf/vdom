@@ -48,8 +48,8 @@ class VSvgPath extends VSvgShapeElement<svg.PathElement> {
     ref = new svg.PathElement();
   }
 
-  void render(Context context) {
-    super.render(context);
+  void flush(Context context) {
+    super.flush(context);
 
     if (d != null) {
       ref.setAttribute('d', d);
